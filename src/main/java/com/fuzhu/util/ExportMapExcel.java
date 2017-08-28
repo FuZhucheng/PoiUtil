@@ -292,8 +292,8 @@ public class ExportMapExcel<T> extends PoiExcelBase<T> {
     private void writeInExcelWithoutField(Iterator<Map<String, Object>> titleFieldIt, Sheet sheet,CellStyle dataStyle,int zdRow){
         while (titleFieldIt.hasNext()) {//记录的迭代器，遍历总记录
             Map<String, Object> mapTemp = titleFieldIt.next();//拿到一条记录
-            Row row = sheet.createRow(zdRow);
             zdRow++;
+            Row row = sheet.createRow(zdRow);
             int zdCell = 0;
             if (mapTemp!=null) {
                 Set<Map.Entry<String, Object>> entrySet = mapTemp.entrySet();

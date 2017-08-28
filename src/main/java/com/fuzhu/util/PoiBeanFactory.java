@@ -25,7 +25,7 @@ public class PoiBeanFactory<T extends PoiExcelBase> {
         PoiInterface<T> poiInterface = null;
         switch (type){
             case -1:
-                poiInterface = new ExportBeanExcel<>();
+                poiInterface = new ExportBeanExcel();
                 break;
             case -2:
 

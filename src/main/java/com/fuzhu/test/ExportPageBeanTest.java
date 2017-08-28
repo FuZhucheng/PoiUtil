@@ -21,11 +21,11 @@ import java.util.Map;
 public class ExportPageBeanTest {
     public static void main(String [] args) throws Exception {
 
-        List<String> listName = new ArrayList<>();
+        List<String> listName = new ArrayList();
         listName.add("id");
         listName.add("名字");
         listName.add("性别");
-        List<String> listId = new ArrayList<>();
+        List<String> listId = new ArrayList();
         listId.add("id");
         listId.add("name");
         listId.add("sex");
@@ -63,7 +63,7 @@ public class ExportPageBeanTest {
          */
         int q=0;
         for (int t =1;t<6;t++){
-            List<Student> list = new ArrayList<>();
+            List<Student> list = new ArrayList();
             list.add(new Student(++q,"张三asdf","男"+t));
             list.add(new Student(++q,"李四asd","男"+t));
             list.add(new Student(++q,"王五bhasdcfvbhujidsaub","女"+t));

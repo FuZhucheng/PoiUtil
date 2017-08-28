@@ -96,7 +96,7 @@ public class MyStyle extends ExcelStyleBase {
 
     @Override
     public Map<Integer,Integer> setMySpecifiedHighAndWidth() {
-        Map<Integer,Integer> map  = new HashMap<>();
+        Map<Integer,Integer> map  = new HashMap();
         map.put(1,3000);
         map.put(2,3000);
         return map;

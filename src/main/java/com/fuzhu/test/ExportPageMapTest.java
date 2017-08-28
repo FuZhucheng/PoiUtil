@@ -17,18 +17,18 @@ import java.util.*;
  */
 public class ExportPageMapTest {
     public static void main(String [] args) throws Exception {
-        Map<String, String> mapT = new HashMap<String, String>();
+        Map<String, String> mapT = new HashMap();
         mapT.put("1", "value1");
         mapT.put("2", "value2");
         mapT.put("3", "value3");
 
 
 
-        List<String> listName = new ArrayList<>();
+        List<String> listName = new ArrayList();
         listName.add("id");
         listName.add("名字");
         listName.add("性别");
-        List<String> listId = new ArrayList<>();
+        List<String> listId = new ArrayList();
         listId.add("sex");
         listId.add("name");
         listId.add("id");
@@ -72,17 +72,17 @@ public class ExportPageMapTest {
          */
         int q=0;
         for (int t =1;t<6;t++){
-            List<Map<String,Object>> listB = new ArrayList<>();
+            List<Map<String,Object>> listB = new ArrayList();
             for (int p=0;p<6;p++){
-                Map<String,Object> map = new TreeMap<>();
+                Map<String,Object> map = new TreeMap();
                 q++;
                 map.put("id",q);
                 map.put("name","abc"+t);
                 map.put("sex","男"+t);
                 listB.add(map);
             }
-           // poiInterface.exportPageContentMapExcel(workbook,sheet,listB,myStyle,t,6);
-            poiInterface.exportPageContentMapExcel(workbook,sheet,listId,listB,myStyle,t,6);
+            poiInterface.exportPageContentMapExcel(workbook,sheet,listB,myStyle,t,6);
+            //poiInterface.exportPageContentMapExcel(workbook,sheet,listId,listB,myStyle,t,6);
         }
         /*
               （七）写入到流对象

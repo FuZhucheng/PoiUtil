@@ -20,15 +20,15 @@ import java.util.Map;
  */
 public class ExportBeanTest {
     public static void main(String [] args) throws IOException {
-        List<String> listName = new ArrayList<>();
+        List<String> listName = new ArrayList();
         listName.add("id");
         listName.add("名字");
         listName.add("性别");
-        List<String> listId = new ArrayList<>();
+        List<String> listId = new ArrayList();
         listId.add("id");
         listId.add("sex");
         listId.add("name");
-        List<Student> list = new ArrayList<>();
+        List<Student> list = new ArrayList();
         list.add(new Student(111,"张三asdf","男"));
         list.add(new Student(111,"李四asd","男"));
         list.add(new Student(111,"王五bhasdcfvbhujidsaub","女"));

@@ -34,7 +34,7 @@ public abstract class PoiExcelBase<T> implements PoiInterface<T> {
 
     //表头--标题栏
     protected Map<Integer, String>  getHeadersNameMap(List<String> headersName){
-        Map<Integer, String> headersNameMap = new HashMap<>();
+        Map<Integer, String> headersNameMap = new HashMap();
         int key = 0;
         for (int i = 0; i < headersName.size(); i++) {
             if (!headersName.get(i).equals(null)) {
@@ -46,7 +46,7 @@ public abstract class PoiExcelBase<T> implements PoiInterface<T> {
     }
     //字段---标题的字段
     protected Map<Integer, String> getTitleFieldMap(List<String> headersId){
-        Map<Integer, String> titleFieldMap = new HashMap<>();
+        Map<Integer, String> titleFieldMap = new HashMap();
         int value = 0;
         for (int i = 0; i < headersId.size(); i++) {
             if (!headersId.get(i).equals(null)) {

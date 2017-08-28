@@ -105,7 +105,7 @@ public  class ExportBeanExcel<T> extends PoiExcelBase<T> {
         //表头--标题栏
         Map<Integer, String> headersNameMap = getHeadersNameMap(headersName);
         if (headersId==null){//兼容无标题栏字段匹配的情况
-            headersId = new ArrayList<>();
+            headersId = new ArrayList();
             Field[] fields = dtoList.get(0).getClass().getDeclaredFields();
             int i = 0;
             while(i<fields.length) {
@@ -199,7 +199,7 @@ public  class ExportBeanExcel<T> extends PoiExcelBase<T> {
     public  Sheet exportPageContentBeanExcel(Workbook wb,Sheet sheet,List<T> dtoList,StyleInterface styleUtil,int pageNum,int pageSize){
         List<String> headersId = null;
         if (headersId==null){//兼容无标题栏字段匹配的情况
-            headersId = new ArrayList<>();
+            headersId = new ArrayList();
             Field[] fields = dtoList.get(0).getClass().getDeclaredFields();
             int i = 0;
             while(i<fields.length) {

@@ -16,17 +16,17 @@ import java.util.*;
 public class ExportMapTest {
     public static void main(String [] args) throws Exception {
 
-        List<String> listName = new ArrayList<>();
+        List<String> listName = new ArrayList();
         listName.add("id");
         listName.add("名字");
         listName.add("性别");
-        List<String> listId = new ArrayList<>();
+        List<String> listId = new ArrayList();
         listId.add("id");
         listId.add("sex");
         listId.add("name");
-        List<Map<String,Object>> listB = new ArrayList<>();
+        List<Map<String,Object>> listB = new ArrayList();
         for (int t=0;t<6;t++){
-            Map<String,Object> map = new TreeMap<>();
+            Map<String,Object> map = new TreeMap();
             map.put("id",t);
             map.put("name","abc"+t);
             map.put("sex","男"+t);
